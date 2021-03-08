@@ -51,6 +51,9 @@ class _MyHomepageState extends State<MyHomepage> {
                   style: TextStyle(fontSize: 25),
                 ),
                 subtitle: Text("ราคา ${food.price} บาท"),
+                onTap: () {
+                  print("คุณเลือกเมนูอาหาร ${food.name}");
+                },
               );
             }));
   }
